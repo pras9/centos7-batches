@@ -17,3 +17,4 @@ yum install -y nodejs npm
 wget http://prdownloads.sourceforge.net/webadmin/webmin-1.740-1.noarch.rpm --no-check-certificate
 rpm -ivh webmin-*.rpm
 yum install -y git
+
