@@ -20,3 +20,13 @@ wget http://prdownloads.sourceforge.net/webadmin/webmin-1.740-1.noarch.rpm --no-
 rpm -ivh webmin-*.rpm
 yum install -y git
 
+# for installing mongodb
+# vi /etc/yum.repos.d/mongodb.repo
+# to add following lines
+# [mongodb]
+# name=MongoDB Repository
+# baseurl=http://downloads-distro.mongodb.org/repo/redhat/os/x86_64/
+# gpgcheck=0
+# enabled=1
+yum -y update
+yum -y install mongodb-org mongodb-org-server
